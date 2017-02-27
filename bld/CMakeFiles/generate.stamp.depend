@@ -1,9 +1,9 @@
 # CMake generation dependency list for this directory.
-C:/mnh/src/CMakeLists.txt
-C:/mnh/bld/CMakeFiles/3.4.3/CMakeSystem.cmake
+C:/mnh/pwp_lab1/src/CMakeLists.txt
+C:/mnh/pwp_lab1/bld/CMakeFiles/3.4.3/CMakeSystem.cmake
 C:/Program Files/CMake/share/cmake-3.4/Modules/CMakeSystemSpecificInitialize.cmake
-C:/mnh/bld/CMakeFiles/3.4.3/CMakeCCompiler.cmake
-C:/mnh/bld/CMakeFiles/3.4.3/CMakeCXXCompiler.cmake
+C:/mnh/pwp_lab1/bld/CMakeFiles/3.4.3/CMakeCCompiler.cmake
+C:/mnh/pwp_lab1/bld/CMakeFiles/3.4.3/CMakeCXXCompiler.cmake
 C:/Program Files/CMake/share/cmake-3.4/Modules/CMakeSystemSpecificInformation.cmake
 C:/Program Files/CMake/share/cmake-3.4/Modules/CMakeGenericSystem.cmake
 C:/Program Files/CMake/share/cmake-3.4/Modules/Platform/Windows.cmake
@@ -11,7 +11,7 @@ C:/Program Files/CMake/share/cmake-3.4/Modules/Platform/WindowsPaths.cmake
 C:/Program Files/CMake/share/cmake-3.4/Modules/CMakeCInformation.cmake
 C:/Program Files/CMake/share/cmake-3.4/Modules/Platform/Windows-MSVC-C.cmake
 C:/Program Files/CMake/share/cmake-3.4/Modules/Platform/Windows-MSVC.cmake
-C:/mnh/bld/CMakeFiles/3.4.3/CMakeRCCompiler.cmake
+C:/mnh/pwp_lab1/bld/CMakeFiles/3.4.3/CMakeRCCompiler.cmake
 C:/Program Files/CMake/share/cmake-3.4/Modules/CMakeRCInformation.cmake
 C:/Program Files/CMake/share/cmake-3.4/Modules/CMakeCommonLanguageInclude.cmake
 C:/Program Files/CMake/share/cmake-3.4/Modules/CMakeCXXInformation.cmake

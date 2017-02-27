@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGUID>{E7395482-440E-36DF-A387-FA11EC4D90AE}</ProjectGUID>
+    <ProjectGUID>{1D52F420-E76B-3CC2-8E5F-CCCAAC2FD92D}</ProjectGUID>
     <Keyword>Win32Proj</Keyword>
     <Platform>Win32</Platform>
     <ProjectName>ZERO_CHECK</ProjectName>
@@ -61,7 +61,7 @@
     </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Midl>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\mnh\pwp_lab1\src\Trygonometria;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -71,7 +71,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Midl>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\mnh\pwp_lab1\src\Trygonometria;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -81,7 +81,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
     <Midl>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\mnh\pwp_lab1\src\Trygonometria;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -91,7 +91,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
     <Midl>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\mnh\pwp_lab1\src\Trygonometria;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -100,10 +100,10 @@
     </Midl>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="CMakeFiles\4db6954be360a58050ab567abe0933bf\generate.stamp.rule">
+    <CustomBuild Include="CMakeFiles\f831832d6bc97fa086dcf69d3035ae47\generate.stamp.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Checking Build System</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HC:/mnh/src -BC:/mnh/bld --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "$(SolutionPath)"
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/mnh/pwp_lab1/src -BC:/mnh/pwp_lab1/bld --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "$(SolutionPath)"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -111,11 +111,11 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/mnh/bld/CMakeFiles/4db6954be360a58050ab567abe0933bf/generate.stamp.rule;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\WindowsPaths.cmake;C:\mnh\bld\CMakeFiles\3.4.3\CMakeCCompiler.cmake;C:\mnh\bld\CMakeFiles\3.4.3\CMakeCXXCompiler.cmake;C:\mnh\bld\CMakeFiles\3.4.3\CMakeRCCompiler.cmake;C:\mnh\bld\CMakeFiles\3.4.3\CMakeSystem.cmake;C:\mnh\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\mnh\bld\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/mnh/pwp_lab1/bld/CMakeFiles/f831832d6bc97fa086dcf69d3035ae47/generate.stamp.rule;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\WindowsPaths.cmake;C:\mnh\pwp_lab1\bld\CMakeFiles\3.4.3\CMakeCCompiler.cmake;C:\mnh\pwp_lab1\bld\CMakeFiles\3.4.3\CMakeCXXCompiler.cmake;C:\mnh\pwp_lab1\bld\CMakeFiles\3.4.3\CMakeRCCompiler.cmake;C:\mnh\pwp_lab1\bld\CMakeFiles\3.4.3\CMakeSystem.cmake;C:\mnh\pwp_lab1\src\CMakeLists.txt;C:\mnh\pwp_lab1\src\trygonometria\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\mnh\pwp_lab1\bld\CMakeFiles\generate.stamp;C:\mnh\pwp_lab1\bld\trygonometria\CMakeFiles\generate.stamp</Outputs>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Checking Build System</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HC:/mnh/src -BC:/mnh/bld --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "$(SolutionPath)"
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/mnh/pwp_lab1/src -BC:/mnh/pwp_lab1/bld --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "$(SolutionPath)"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -123,11 +123,11 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/mnh/bld/CMakeFiles/4db6954be360a58050ab567abe0933bf/generate.stamp.rule;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\WindowsPaths.cmake;C:\mnh\bld\CMakeFiles\3.4.3\CMakeCCompiler.cmake;C:\mnh\bld\CMakeFiles\3.4.3\CMakeCXXCompiler.cmake;C:\mnh\bld\CMakeFiles\3.4.3\CMakeRCCompiler.cmake;C:\mnh\bld\CMakeFiles\3.4.3\CMakeSystem.cmake;C:\mnh\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\mnh\bld\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/mnh/pwp_lab1/bld/CMakeFiles/f831832d6bc97fa086dcf69d3035ae47/generate.stamp.rule;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\WindowsPaths.cmake;C:\mnh\pwp_lab1\bld\CMakeFiles\3.4.3\CMakeCCompiler.cmake;C:\mnh\pwp_lab1\bld\CMakeFiles\3.4.3\CMakeCXXCompiler.cmake;C:\mnh\pwp_lab1\bld\CMakeFiles\3.4.3\CMakeRCCompiler.cmake;C:\mnh\pwp_lab1\bld\CMakeFiles\3.4.3\CMakeSystem.cmake;C:\mnh\pwp_lab1\src\CMakeLists.txt;C:\mnh\pwp_lab1\src\trygonometria\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\mnh\pwp_lab1\bld\CMakeFiles\generate.stamp;C:\mnh\pwp_lab1\bld\trygonometria\CMakeFiles\generate.stamp</Outputs>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Checking Build System</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HC:/mnh/src -BC:/mnh/bld --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "$(SolutionPath)"
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/mnh/pwp_lab1/src -BC:/mnh/pwp_lab1/bld --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "$(SolutionPath)"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -135,11 +135,11 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/mnh/bld/CMakeFiles/4db6954be360a58050ab567abe0933bf/generate.stamp.rule;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\WindowsPaths.cmake;C:\mnh\bld\CMakeFiles\3.4.3\CMakeCCompiler.cmake;C:\mnh\bld\CMakeFiles\3.4.3\CMakeCXXCompiler.cmake;C:\mnh\bld\CMakeFiles\3.4.3\CMakeRCCompiler.cmake;C:\mnh\bld\CMakeFiles\3.4.3\CMakeSystem.cmake;C:\mnh\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\mnh\bld\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/mnh/pwp_lab1/bld/CMakeFiles/f831832d6bc97fa086dcf69d3035ae47/generate.stamp.rule;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\WindowsPaths.cmake;C:\mnh\pwp_lab1\bld\CMakeFiles\3.4.3\CMakeCCompiler.cmake;C:\mnh\pwp_lab1\bld\CMakeFiles\3.4.3\CMakeCXXCompiler.cmake;C:\mnh\pwp_lab1\bld\CMakeFiles\3.4.3\CMakeRCCompiler.cmake;C:\mnh\pwp_lab1\bld\CMakeFiles\3.4.3\CMakeSystem.cmake;C:\mnh\pwp_lab1\src\CMakeLists.txt;C:\mnh\pwp_lab1\src\trygonometria\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\mnh\pwp_lab1\bld\CMakeFiles\generate.stamp;C:\mnh\pwp_lab1\bld\trygonometria\CMakeFiles\generate.stamp</Outputs>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Checking Build System</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HC:/mnh/src -BC:/mnh/bld --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "$(SolutionPath)"
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/mnh/pwp_lab1/src -BC:/mnh/pwp_lab1/bld --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "$(SolutionPath)"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -147,8 +147,8 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/mnh/bld/CMakeFiles/4db6954be360a58050ab567abe0933bf/generate.stamp.rule;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\WindowsPaths.cmake;C:\mnh\bld\CMakeFiles\3.4.3\CMakeCCompiler.cmake;C:\mnh\bld\CMakeFiles\3.4.3\CMakeCXXCompiler.cmake;C:\mnh\bld\CMakeFiles\3.4.3\CMakeRCCompiler.cmake;C:\mnh\bld\CMakeFiles\3.4.3\CMakeSystem.cmake;C:\mnh\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\mnh\bld\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/mnh/pwp_lab1/bld/CMakeFiles/f831832d6bc97fa086dcf69d3035ae47/generate.stamp.rule;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\WindowsPaths.cmake;C:\mnh\pwp_lab1\bld\CMakeFiles\3.4.3\CMakeCCompiler.cmake;C:\mnh\pwp_lab1\bld\CMakeFiles\3.4.3\CMakeCXXCompiler.cmake;C:\mnh\pwp_lab1\bld\CMakeFiles\3.4.3\CMakeRCCompiler.cmake;C:\mnh\pwp_lab1\bld\CMakeFiles\3.4.3\CMakeSystem.cmake;C:\mnh\pwp_lab1\src\CMakeLists.txt;C:\mnh\pwp_lab1\src\trygonometria\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\mnh\pwp_lab1\bld\CMakeFiles\generate.stamp;C:\mnh\pwp_lab1\bld\trygonometria\CMakeFiles\generate.stamp</Outputs>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>

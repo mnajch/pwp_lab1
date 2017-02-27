@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGUID>{7AEF53C5-83D5-3C26-A8C7-5DBA16F36C67}</ProjectGUID>
+    <ProjectGUID>{63F9D5C7-A740-3844-8A5F-B8C54ABF9336}</ProjectGUID>
     <Keyword>Win32Proj</Keyword>
     <Platform>Win32</Platform>
     <ProjectName>Laborka</ProjectName>
@@ -54,25 +54,25 @@
   <PropertyGroup Label="UserMacros" />
     <PropertyGroup>
       <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\mnh\bld\Debug\</OutDir>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\mnh\pwp_lab1\bld\Debug\</OutDir>
       <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Laborka.dir\Debug\</IntDir>
       <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Laborka</TargetName>
       <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
       <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
       <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\mnh\bld\Release\</OutDir>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\mnh\pwp_lab1\bld\Release\</OutDir>
       <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Laborka.dir\Release\</IntDir>
       <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Laborka</TargetName>
       <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
       <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
       <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\mnh\bld\MinSizeRel\</OutDir>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\mnh\pwp_lab1\bld\MinSizeRel\</OutDir>
       <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Laborka.dir\MinSizeRel\</IntDir>
       <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Laborka</TargetName>
       <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
       <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
       <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\mnh\bld\RelWithDebInfo\</OutDir>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\mnh\pwp_lab1\bld\RelWithDebInfo\</OutDir>
       <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Laborka.dir\RelWithDebInfo\</IntDir>
       <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Laborka</TargetName>
       <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
@@ -81,7 +81,7 @@
     </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\mnh\pwp_lab1\src\Trygonometria;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Debug/</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsCpp</CompileAs>
@@ -98,10 +98,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\mnh\pwp_lab1\src\Trygonometria;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\mnh\pwp_lab1\src\Trygonometria;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -110,12 +110,12 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;trygonometria\Debug\Trygonometria.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/mnh/bld/Debug/Laborka.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/mnh/bld/Debug/Laborka.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/mnh/pwp_lab1/bld/Debug/Laborka.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/mnh/pwp_lab1/bld/Debug/Laborka.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
       <Version></Version>
     </Link>
@@ -125,7 +125,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\mnh\pwp_lab1\src\Trygonometria;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Release/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -141,10 +141,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\mnh\pwp_lab1\src\Trygonometria;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\mnh\pwp_lab1\src\Trygonometria;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -153,12 +153,12 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;trygonometria\Release\Trygonometria.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/mnh/bld/Release/Laborka.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/mnh/bld/Release/Laborka.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/mnh/pwp_lab1/bld/Release/Laborka.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/mnh/pwp_lab1/bld/Release/Laborka.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
       <Version></Version>
     </Link>
@@ -168,7 +168,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\mnh\pwp_lab1\src\Trygonometria;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -184,10 +184,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\mnh\pwp_lab1\src\Trygonometria;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\mnh\pwp_lab1\src\Trygonometria;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -196,12 +196,12 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;trygonometria\MinSizeRel\Trygonometria.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/mnh/bld/MinSizeRel/Laborka.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/mnh/bld/MinSizeRel/Laborka.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/mnh/pwp_lab1/bld/MinSizeRel/Laborka.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/mnh/pwp_lab1/bld/MinSizeRel/Laborka.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
       <Version></Version>
     </Link>
@@ -211,7 +211,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\mnh\pwp_lab1\src\Trygonometria;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -227,10 +227,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\mnh\pwp_lab1\src\Trygonometria;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\mnh\pwp_lab1\src\Trygonometria;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -239,12 +239,12 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;trygonometria\RelWithDebInfo\Trygonometria.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/mnh/bld/RelWithDebInfo/Laborka.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/mnh/bld/RelWithDebInfo/Laborka.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/mnh/pwp_lab1/bld/RelWithDebInfo/Laborka.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/mnh/pwp_lab1/bld/RelWithDebInfo/Laborka.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
       <Version></Version>
     </Link>
@@ -254,9 +254,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <CustomBuild Include="..\src\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/mnh/src/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/mnh/pwp_lab1/src/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HC:/mnh/src -BC:/mnh/bld --check-stamp-file C:\mnh\bld\CMakeFiles\generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/mnh/pwp_lab1/src -BC:/mnh/pwp_lab1/bld --check-stamp-file C:\mnh\pwp_lab1\bld\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -264,11 +264,11 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/mnh/src/CMakeLists.txt;C:\mnh\src\CMakeLists.txt;C:\mnh\bld\CMakeFiles\3.4.3\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInitialize.cmake;C:\mnh\bld\CMakeFiles\3.4.3\CMakeCCompiler.cmake;C:\mnh\bld\CMakeFiles\3.4.3\CMakeCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;C:\mnh\bld\CMakeFiles\3.4.3\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;C:\mnh\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\mnh\bld\CMakeFiles\generate.stamp</Outputs>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/mnh/src/CMakeLists.txt</Message>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/mnh/pwp_lab1/src/CMakeLists.txt;C:\mnh\pwp_lab1\src\CMakeLists.txt;C:\mnh\pwp_lab1\bld\CMakeFiles\3.4.3\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInitialize.cmake;C:\mnh\pwp_lab1\bld\CMakeFiles\3.4.3\CMakeCCompiler.cmake;C:\mnh\pwp_lab1\bld\CMakeFiles\3.4.3\CMakeCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;C:\mnh\pwp_lab1\bld\CMakeFiles\3.4.3\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;C:\mnh\pwp_lab1\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\mnh\pwp_lab1\bld\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/mnh/pwp_lab1/src/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HC:/mnh/src -BC:/mnh/bld --check-stamp-file C:\mnh\bld\CMakeFiles\generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/mnh/pwp_lab1/src -BC:/mnh/pwp_lab1/bld --check-stamp-file C:\mnh\pwp_lab1\bld\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -276,11 +276,11 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/mnh/src/CMakeLists.txt;C:\mnh\src\CMakeLists.txt;C:\mnh\bld\CMakeFiles\3.4.3\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInitialize.cmake;C:\mnh\bld\CMakeFiles\3.4.3\CMakeCCompiler.cmake;C:\mnh\bld\CMakeFiles\3.4.3\CMakeCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;C:\mnh\bld\CMakeFiles\3.4.3\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;C:\mnh\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\mnh\bld\CMakeFiles\generate.stamp</Outputs>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/mnh/src/CMakeLists.txt</Message>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/mnh/pwp_lab1/src/CMakeLists.txt;C:\mnh\pwp_lab1\src\CMakeLists.txt;C:\mnh\pwp_lab1\bld\CMakeFiles\3.4.3\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInitialize.cmake;C:\mnh\pwp_lab1\bld\CMakeFiles\3.4.3\CMakeCCompiler.cmake;C:\mnh\pwp_lab1\bld\CMakeFiles\3.4.3\CMakeCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;C:\mnh\pwp_lab1\bld\CMakeFiles\3.4.3\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;C:\mnh\pwp_lab1\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\mnh\pwp_lab1\bld\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/mnh/pwp_lab1/src/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HC:/mnh/src -BC:/mnh/bld --check-stamp-file C:\mnh\bld\CMakeFiles\generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/mnh/pwp_lab1/src -BC:/mnh/pwp_lab1/bld --check-stamp-file C:\mnh\pwp_lab1\bld\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -288,11 +288,11 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/mnh/src/CMakeLists.txt;C:\mnh\src\CMakeLists.txt;C:\mnh\bld\CMakeFiles\3.4.3\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInitialize.cmake;C:\mnh\bld\CMakeFiles\3.4.3\CMakeCCompiler.cmake;C:\mnh\bld\CMakeFiles\3.4.3\CMakeCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;C:\mnh\bld\CMakeFiles\3.4.3\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;C:\mnh\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\mnh\bld\CMakeFiles\generate.stamp</Outputs>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/mnh/src/CMakeLists.txt</Message>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/mnh/pwp_lab1/src/CMakeLists.txt;C:\mnh\pwp_lab1\src\CMakeLists.txt;C:\mnh\pwp_lab1\bld\CMakeFiles\3.4.3\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInitialize.cmake;C:\mnh\pwp_lab1\bld\CMakeFiles\3.4.3\CMakeCCompiler.cmake;C:\mnh\pwp_lab1\bld\CMakeFiles\3.4.3\CMakeCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;C:\mnh\pwp_lab1\bld\CMakeFiles\3.4.3\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;C:\mnh\pwp_lab1\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\mnh\pwp_lab1\bld\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/mnh/pwp_lab1/src/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HC:/mnh/src -BC:/mnh/bld --check-stamp-file C:\mnh\bld\CMakeFiles\generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/mnh/pwp_lab1/src -BC:/mnh/pwp_lab1/bld --check-stamp-file C:\mnh\pwp_lab1\bld\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -300,16 +300,19 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/mnh/src/CMakeLists.txt;C:\mnh\src\CMakeLists.txt;C:\mnh\bld\CMakeFiles\3.4.3\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInitialize.cmake;C:\mnh\bld\CMakeFiles\3.4.3\CMakeCCompiler.cmake;C:\mnh\bld\CMakeFiles\3.4.3\CMakeCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;C:\mnh\bld\CMakeFiles\3.4.3\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;C:\mnh\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\mnh\bld\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/mnh/pwp_lab1/src/CMakeLists.txt;C:\mnh\pwp_lab1\src\CMakeLists.txt;C:\mnh\pwp_lab1\bld\CMakeFiles\3.4.3\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInitialize.cmake;C:\mnh\pwp_lab1\bld\CMakeFiles\3.4.3\CMakeCCompiler.cmake;C:\mnh\pwp_lab1\bld\CMakeFiles\3.4.3\CMakeCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;C:\mnh\pwp_lab1\bld\CMakeFiles\3.4.3\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;C:\mnh\pwp_lab1\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\mnh\pwp_lab1\bld\CMakeFiles\generate.stamp</Outputs>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\main.cpp"  />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:/mnh/bld/ZERO_CHECK.vcxproj">
-      <Project>E7395482-440E-36DF-A387-FA11EC4D90AE</Project>
+    <ProjectReference Include="C:/mnh/pwp_lab1/bld/ZERO_CHECK.vcxproj">
+      <Project>1D52F420-E76B-3CC2-8E5F-CCCAAC2FD92D</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/mnh/pwp_lab1/bld/trygonometria/Trygonometria.vcxproj">
+      <Project>547D37FC-0E9E-330D-A3F7-6C1A83010E05</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
