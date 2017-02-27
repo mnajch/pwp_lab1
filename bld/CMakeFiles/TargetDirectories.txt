@@ -1,0 +1,3 @@
+C:/mnh/bld/CMakeFiles/ALL_BUILD.dir
+C:/mnh/bld/CMakeFiles/Laborka.dir
+C:/mnh/bld/CMakeFiles/ZERO_CHECK.dir
